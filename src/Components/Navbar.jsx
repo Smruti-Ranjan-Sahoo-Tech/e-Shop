@@ -79,7 +79,9 @@ const Navbar = () => {
           >
             Login | Register
           </button>
-          <button className="md:hidden">
+          <button className="md:hidden"
+            onClick={() => setIsModalOpen(true)}
+            >
             <FontAwesomeIcon icon={faUser} />
           </button>
         </div>
