@@ -1,0 +1,14 @@
+/* Custom thin scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin; /* Firefox */
+}
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px; /* Chrome, Safari, Opera */
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #ef4444; /* Tailwind's red-500 */
+  border-radius: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #e5e7eb; /* Tailwind's gray-200 */
+}
