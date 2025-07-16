@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom' 
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Home from './Pages/Home'
@@ -23,7 +23,7 @@ function App() {
       
     }, [order])
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -41,7 +41,7 @@ function App() {
          
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 
 }
