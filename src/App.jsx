@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { HashRouter, Routes, Route } from 'react-router-dom' 
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Home from './Pages/Home'
@@ -23,7 +23,8 @@ function App() {
       
     }, [order])
   return (
-    <HashRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -41,7 +42,7 @@ function App() {
          
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   )
 
 }
